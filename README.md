@@ -11,3 +11,4 @@ This repository is a compilation of all of my very basic Python projects.
 - castle-dragonsnax.py - It's a text based adventure game
 - aliens.py - The world is under threat from approaching aliens. This is a game in which you have to enter the correct password to protect Earth from deadly aliens
 - guessing-game.py - You have to guess the number which the computer is thinking of
+- zookeeper.py - A program in which you can manage a small zoo.
