@@ -13,3 +13,4 @@ This repository is a compilation of all of my very basic Python projects.
 - guessing-game.py - You have to guess the number which the computer is thinking of
 - zookeeper.py - A program in which you can manage a small zoo
 - coffee-machine.py - This mimics a coffee machine software which allows you to interact with the machine
+- uselessAI.py - Does what the name says...
