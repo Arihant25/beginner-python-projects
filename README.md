@@ -17,3 +17,4 @@ This repository is a compilation of my simple Python projects.
 - hangman - HANGMAN!!!
 - time-left - Tell you how many days, weeks, and months you will be alive (approximately)
 - tip - Calculates the bill and splits it along with the tip
+- odd-even - Tells whether a given number is odd or even
