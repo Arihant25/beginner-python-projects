@@ -20,3 +20,4 @@ This repository is a compilation of my simple Python projects.
 - tip - Calculates the bill and splits it along with the tip
 - odd-even - Tells whether a given number is odd or even
 - bmi - Calculates your BMI and explains the result
+- leap - Checks if a given year is a leap year or not
