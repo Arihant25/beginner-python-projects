@@ -1,4 +1,5 @@
 # Beginner Python Projects
+
 This repository is a compilation of my simple Python projects.
 
 - shopping-list - This program will help you make your shopping lists
@@ -18,3 +19,4 @@ This repository is a compilation of my simple Python projects.
 - time-left - Tell you how many days, weeks, and months you will be alive (approximately)
 - tip - Calculates the bill and splits it along with the tip
 - odd-even - Tells whether a given number is odd or even
+- bmi - Calculates your BMI and explains the result
