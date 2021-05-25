@@ -26,3 +26,4 @@ This repository is a compilation of my simple Python projects.
 - treasure-island - Another text based adventure game, but this time on an island!
 - coin-toss - Randomly shows heads or tails
 - bankers-roulette - Selects a random name from a given list of names, so that the person selected has to pay for everybody's food bill
+- map - Allows you to mark a square on a 2D list
