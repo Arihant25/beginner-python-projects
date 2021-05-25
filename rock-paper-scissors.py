@@ -1,12 +1,12 @@
 import random
 
 print('''
-,------.              ,--.        ,------.                                   ,---.        ,--.                                    
-|  .--. ' ,---.  ,---.|  |,-.     |  .--. ' ,--,--. ,---.  ,---. ,--.--.    '   .-'  ,---.`--' ,---.  ,---.  ,---. ,--.--. ,---.  
-|  '--'.'| .-. || .--'|     /     |  '--' |' ,-.  || .-. || .-. :|  .--'    `.  `-. | .--',--.(  .-' (  .-' | .-. ||  .--'(  .-'  
-|  |\  \ ' '-' '\ `--.|  \  \     |  | --' \ '-'  || '-' '\   --.|  |       .-'    |\ `--.|  |.-'  `).-'  `)' '-' '|  |   .-'  `) 
-`--' '--' `---'  `---'`--'`--'    `--'      `--`--'|  |-'  `----'`--'       `-----'  `---'`--'`----' `----'  `---' `--'   `----'  
-                                                   `--'                                                                           
+,------.              ,--.        ,------.                                   ,---.        ,--.
+|  .--. ' ,---.  ,---.|  |,-.     |  .--. ' ,--,--. ,---.  ,---. ,--.--.    '   .-'  ,---.`--' ,---.  ,---.  ,---. ,--.--. ,---.
+|  '--'.'| .-. || .--'|     /     |  '--' |' ,-.  || .-. || .-. :|  .--'    `.  `-. | .--',--.(  .-' (  .-' | .-. ||  .--'(  .-'
+|  |\  \ ' '-' '\ `--.|  \  \     |  | --' \ '-'  || '-' '\   --.|  |       .-'    |\ `--.|  |.-'  `).-'  `)' '-' '|  |   .-'  `)
+`--' '--' `---'  `---'`--'`--'    `--'      `--`--'|  |-'  `----'`--'       `-----'  `---'`--'`----' `----'  `---' `--'   `----'
+                                                   `--'
 ''')
 
 rock = '''
@@ -38,8 +38,14 @@ scissors = '''
 
 choices = [rock, paper, scissors]
 
-user_choice = choices[int(
-    input("Enter 0 for rock, 1 for paper and 2 for scissors: "))]
+user_input = int(
+    input("Enter 0 for rock, 1 for paper and 2 for scissors: "))
+
+if user_input < 0 or user_input > 2:
+    print("That's an incorrect option. Please restart the program.")
+    raise SystemExit(0)
+
+user_choice = choices[user_input]
 computer_choice = choices[random.randint(0, 2)]
 
 print(user_choice)
@@ -54,4 +60,4 @@ elif user_choice == rock and computer_choice == scissors or user_choice == paper
     print("You win!")
 
 else:
-    print("You lose.")
+    print("You lose. Try again?")

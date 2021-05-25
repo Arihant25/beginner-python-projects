@@ -28,3 +28,4 @@ This repository is a compilation of my simple Python projects.
 - bankers-roulette - Selects a random name from a given list of names, so that the person selected has to pay for everybody's food bill
 - map - Allows you to mark a square on a 2D list
 - rock-paper-scissors - The classic game to settle any dispute
+- average-height - Calculates the average of a list of heights
