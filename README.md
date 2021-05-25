@@ -32,3 +32,4 @@ This repository is a compilation of my simple Python projects.
 - max-score - Finds the highest score from a given list
 - hundred - Calculates the sum of all the even numbers from 1 to 100
 - fizzbuzz - Solves the FizzBuzz game
+- password-generator - Generates a unique password every time!
