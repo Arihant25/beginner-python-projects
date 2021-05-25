@@ -22,3 +22,4 @@ This repository is a compilation of my simple Python projects.
 - bmi - Calculates your BMI and explains the result
 - leap - Checks if a given year is a leap year or not
 - pizza - Orders (fake) pizza
+- love-calculator - Calculates the chances that you are compatible with your crush
