@@ -31,3 +31,4 @@ This repository is a compilation of my simple Python projects.
 - average-height - Calculates the average of a list of heights
 - max-score - Finds the highest score from a given list
 - hundred - Calculates the sum of all the even numbers from 1 to 100
+- fizzbuzz - Solves the FizzBuzz game
