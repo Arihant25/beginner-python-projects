@@ -2,18 +2,18 @@
 
 This repository is a compilation of my simple Python projects.
 
-- shopping-list - This program will help you make your shopping lists
-- vending-machine - This resembles a vending machine from which you can get virtual things
+- shopping-list - Helps make shopping lists
+- vending-machine - Resembles a vending machine from which you can get virtual things
 - snowflakes - Creates snowflake patterns with Python's Turtle module
 - snowstorm - Creates snowstorm patterns with Python's Turtle module
-- tickets - This allows you to buy (fake) tickets
+- tickets - Allows you to buy (fake) tickets
 - caesar-cypher - This program can encrypt your message or decrypt it according to the key you provide
-- multiplication-table-generator - Get the multiplication table of any number you enter
-- castle-dragonsnax - It's a text based adventure game
-- aliens - The world is under threat from approaching aliens. This is a game in which you have to enter the correct password to protect Earth from deadly aliens
+- multiplication-table-generator - Gets the multiplication table of any number you enter
+- castle-dragonsnax - Text based adventure game
+- aliens - A game in which you have to enter the correct password to protect Earth from deadly aliens
 - guessing-game - You have to guess the number which the computer is thinking of
 - zookeeper - A program in which you can manage a small zoo
-- coffee-machine - This mimics a coffee machine software which allows you to interact with the machine
+- coffee-machine - Mimics a coffee machine software which allows you to interact with the machine
 - uselessAI - Does what the name says...
 - hangman - HANGMAN!!!
 - time-left - Tell you how many days, weeks, and months you will be alive (approximately)
@@ -27,3 +27,4 @@ This repository is a compilation of my simple Python projects.
 - coin-toss - Randomly shows heads or tails
 - bankers-roulette - Selects a random name from a given list of names, so that the person selected has to pay for everybody's food bill
 - map - Allows you to mark a square on a 2D list
+- rock-paper-scissors - The classic game to settle any dispute
