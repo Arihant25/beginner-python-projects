@@ -29,3 +29,4 @@ This repository is a compilation of my simple Python projects.
 - map - Allows you to mark a square on a 2D list
 - rock-paper-scissors - The classic game to settle any dispute
 - average-height - Calculates the average of a list of heights
+- max-score - Finds the highest score from a given list
