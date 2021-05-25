@@ -25,3 +25,4 @@ This repository is a compilation of my simple Python projects.
 - love-calculator - Calculates the chances that you are compatible with your crush
 - treasure-island - Another text based adventure game, but this time on an island!
 - coin-toss - Randomly shows heads or tails
+- bankers-roulette - Selects a random name from a given list of names, so that the person selected has to pay for everybody's food bill
