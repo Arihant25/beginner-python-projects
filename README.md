@@ -24,3 +24,4 @@ This repository is a compilation of my simple Python projects.
 - pizza - Orders (fake) pizza
 - love-calculator - Calculates the chances that you are compatible with your crush
 - treasure-island - Another text based adventure game, but this time on an island!
+- coin-toss - Randomly shows heads or tails
