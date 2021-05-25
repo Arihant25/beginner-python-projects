@@ -23,3 +23,4 @@ This repository is a compilation of my simple Python projects.
 - leap - Checks if a given year is a leap year or not
 - pizza - Orders (fake) pizza
 - love-calculator - Calculates the chances that you are compatible with your crush
+- treasure-island - Another text based adventure game, but this time on an island!
