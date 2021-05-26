@@ -35,3 +35,4 @@ This repository is a compilation of my simple Python projects.
 - password-generator - Generates a unique password every time!
 - hangman2 - Updated Hangman with more words and added ASCII art!
 - prime - Checks if a given number is a prime number
+- caesar-cypher2 - Rewritten to be more user-friendly
