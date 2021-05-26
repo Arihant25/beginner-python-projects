@@ -33,3 +33,4 @@ This repository is a compilation of my simple Python projects.
 - hundred - Calculates the sum of all the even numbers from 1 to 100
 - fizzbuzz - Solves the FizzBuzz game
 - password-generator - Generates a unique password every time!
+- hangman2 - Updated Hangman with more words and added ASCII art!
