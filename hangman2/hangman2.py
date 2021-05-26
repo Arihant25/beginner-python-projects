@@ -58,7 +58,7 @@ while not end_of_game:
             print(stages[lives])
             break
 
-    # Joins all the elements in the list and turn it into a string
+    # Joins all the elements in the list and turns it into a string
 
     print(f"{' '.join(display)}")
 
