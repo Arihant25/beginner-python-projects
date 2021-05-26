@@ -38,3 +38,4 @@ This repository is a compilation of my simple Python projects.
 - caesar-cypher2 - Rewritten to be more user-friendly
 - students-grades - Converts Hogwarts students' marks to grades
 - travel-log - Allows you to maintain a list containing the countries and cities you've visited
+- secret-auction - Conducts a secret auction
