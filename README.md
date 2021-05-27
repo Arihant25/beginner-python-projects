@@ -40,3 +40,4 @@ This repository is a compilation of my simple Python projects.
 - travel-log - Allows you to maintain a list containing the countries and cities you've visited
 - secret-auction - Conducts a secret auction
 - days-in-month - Shows the number of days in a given month in a particular year
+- calculator - Calculates, obviously
