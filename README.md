@@ -41,3 +41,4 @@ This repository is a compilation of my simple Python projects.
 - secret-auction - Conducts a secret auction
 - days-in-month - Shows the number of days in a given month in a particular year
 - calculator - Calculates, obviously
+- blackjack - The popular card game black jack, now in the comfort of your terminal
