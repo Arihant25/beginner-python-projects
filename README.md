@@ -42,3 +42,4 @@ This repository is a compilation of my simple Python projects.
 - days-in-month - Shows the number of days in a given month in a particular year
 - calculator - Calculates, obviously
 - blackjack - The popular card game black jack, now in the comfort of your terminal
+- guess-the-number - A better version of guessing-game
