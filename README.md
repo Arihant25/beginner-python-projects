@@ -43,3 +43,4 @@ This repository is a compilation of my simple Python projects.
 - calculator - Calculates, obviously
 - blackjack - The popular card game black jack, now in the comfort of your terminal
 - guess-the-number - A better version of guessing-game
+- higher-lower - My version of the [Higher Lower Game](higherlowergame.com)
