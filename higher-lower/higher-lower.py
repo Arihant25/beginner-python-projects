@@ -20,38 +20,56 @@ while should_continue == 'Y':
 
     random_index = randint(0, 49)
     second_random_index = randint(0, 49)
+    if second_random_index == random_index:
+        second_random_index = randint(0, 49)
+
+    def format_account(account):
+        """Gets account data and displays it in a readable format"""
+        return f"{account['name']}, a {account['description']}, from {account['country']}"
 
     while True:
+
+        # Gets A and B from the data
 
         a = data[random_index]
         b = data[second_random_index]
 
         print(
-            f"Compare A: {data[random_index]['name']}, a {data[random_index]['description']}, from {data[random_index]['country']}")
+            f"Compare A: {format_account(a)}")
 
         print(vs)
 
         print(
-            f"Against B: {data[second_random_index]['name']}, a {data[second_random_index]['description']}, from {data[second_random_index]['country']}\n")
+            f"Against B: {format_account(b)}\n")
 
         answer = input(
             "Who has more followers on Instagram? Type 'A' or 'B': ").upper()
 
-        if data[random_index]['follower_count'] > data[second_random_index]['follower_count']:
+        # Finds the correct answer
+
+        if a['follower_count'] > b['follower_count']:
             correct_answer = 'A'
 
         else:
             correct_answer = 'B'
 
+        # Win/Lose Conditions
+
         if answer == correct_answer:
+
             score += 1
+
             screen_clear()
+
             print(f"You're right! Current score: {score}")
+
+            # Reassigns A to B and B to a new account
+
             random_index = second_random_index
             second_random_index = randint(0, 49)
 
         else:
-            print(f"Wrong answer! Your final score was {score}.")
+            print(f"\nWrong answer! Your final score was {score}.\n")
             break
 
     should_continue = input("Play again? Type 'Y' or 'N': ").upper()
