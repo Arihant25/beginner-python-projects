@@ -44,3 +44,4 @@ This repository is a compilation of my simple Python projects.
 - blackjack - The popular card game black jack, now in the comfort of your terminal
 - guess-the-number - A better version of guessing-game
 - higher-lower - My version of the [Higher Lower Game](higherlowergame.com)
+- coffee_machine_lite - A simpler version of coffee machine
