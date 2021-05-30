@@ -46,3 +46,4 @@ This repository is a compilation of my simple Python projects.
 - higher-lower - My version of the [Higher Lower Game](higherlowergame.com)
 - coffee_machine_lite - A simpler version of coffee machine
 - quiz-game - A true/false quiz game with questions from Open Trivia DB
+- polygons - A cool shape made with just polygons in Turtle

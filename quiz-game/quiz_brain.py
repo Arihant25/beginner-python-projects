@@ -24,4 +24,3 @@ class QuizBrain:
             print("That's wrong.")
 
         print(f"Your current score: {self.score}/{self.question_number}\n")
-
