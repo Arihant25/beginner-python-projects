@@ -45,3 +45,4 @@ This repository is a compilation of my simple Python projects.
 - guess-the-number - A better version of guessing-game
 - higher-lower - My version of the [Higher Lower Game](higherlowergame.com)
 - coffee_machine_lite - A simpler version of coffee machine
+- quiz-game - A true/false quiz game with questions from Open Trivia DB

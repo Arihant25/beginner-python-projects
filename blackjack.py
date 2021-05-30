@@ -102,7 +102,7 @@ def blackjack():
             return "You have a blackjack. You win!"
 
         if calculate_score(your_cards) > 21:
-            return ("You exceeded 21. You lose!")
+            return "You exceeded 21. You lose!"
 
     print(f"Your final hand: {your_cards}, final score: {your_score}")
     print(f"Computer's final hand: {CPU_cards}, final score: {CPU_score}")
