@@ -25,7 +25,6 @@ def clear():
     t.clear()
 
 
-
 screen.listen()
 
 screen.onkey(key="Up", fun=move_forwards)

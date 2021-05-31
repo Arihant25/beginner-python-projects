@@ -32,7 +32,7 @@ This repository is a compilation of my simple Python projects.
 - max-score - Finds the highest score from a given list
 - hundred - Calculates the sum of all the even numbers from 1 to 100
 - fizzbuzz - Solves the FizzBuzz game
-- password-generator - Generates a unique password every time!
+- password-generator - Generates a unique password every time
 - hangman2 - Updated Hangman with more words and added ASCII art!
 - prime - Checks if a given number is a prime number
 - caesar-cypher2 - Rewritten to be more user-friendly
@@ -51,4 +51,4 @@ This repository is a compilation of my simple Python projects.
 - spirograph - Creates a spirograph using Turtle
 - hirst_painting - Creates a spot painting like Damien Hirst
 - etch_a_sketch - A game similar to Etch A Sketch
-- 
+- turtle_race - Lets you bet on which turtle is going to win the Turtle Race!
