@@ -50,3 +50,5 @@ This repository is a compilation of my simple Python projects.
 - random_walk - Creates a random walk using Turtle
 - spirograph - Creates a spirograph using Turtle
 - hirst_painting - Creates a spot painting like Damien Hirst
+- etch_a_sketch - A game similar to Etch A Sketch
+- 
