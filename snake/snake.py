@@ -17,13 +17,20 @@ class Snake:
 
     def create_snake(self):
         """Used to initialize the three turtles"""
-
         for position in STARTING_POSITIONS:
-            new_segment = Turtle('square')
-            new_segment.color('white')
-            new_segment.penup()
-            new_segment.setx(position)
-            self.segments.append(new_segment)
+            self.add_segment(position)
+
+    def add_segment(self, x_coord):
+        """Adds a new segment to the snake"""
+        new_segment = Turtle('square')
+        new_segment.color('white')
+        new_segment.penup()
+        new_segment.setx(x_coord)
+        self.segments.append(new_segment)
+
+    def extend(self):
+        """Increases the length of the snake"""
+        self.add_segment(self.segments[-1].xcor())
 
     def move(self):
         """Moves the last segment to the second-last segment, the second-last segment to the third-last segment,
@@ -31,8 +38,8 @@ class Snake:
 
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[seg_num - 1].xcor()  # X coordinate of the second-last segment
-            new_y = self.segments[seg_num - 1].ycor()  # Y coordinate of the second-last
-            self.segments[seg_num].goto(new_x, new_y)  # Sets the coordinates of the last segment
+            new_y = self.segments[seg_num - 1].ycor()  # Y coordinate of the second-last segment
+            self.segments[seg_num].goto(new_x, new_y)  # Set the coordinates of the last segment
         self.head.forward(MOVE_DISTANCE)
 
     def up(self):
@@ -50,4 +57,3 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
-
