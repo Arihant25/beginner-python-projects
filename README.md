@@ -53,3 +53,4 @@ This repository is a compilation of my simple Python projects.
 - etch_a_sketch - A game similar to Etch A Sketch
 - turtle_race - Lets you bet on which turtle is going to win the Turtle Race!
 - snake - Snake, but made using Turtle
+- pong - Pong, but made using Turtle
