@@ -54,3 +54,4 @@ This repository is a compilation of my simple Python projects.
 - turtle_race - Lets you bet on which turtle is going to win the Turtle Race!
 - snake - Snake, but made using Turtle
 - pong - Pong, but made using Turtle
+- crossy-turtle - Crossy Road, but made using Turtle
