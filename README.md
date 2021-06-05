@@ -55,3 +55,4 @@ This repository is a compilation of my simple Python projects.
 - snake - Snake, but made using Turtle
 - pong - Pong, but made using Turtle
 - crossy-turtle - Crossy Road, but made using Turtle
+- mail-merge - Creates customized invites to a birthday party using a list of names
