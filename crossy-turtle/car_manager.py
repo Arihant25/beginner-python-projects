@@ -2,8 +2,8 @@ import turtle
 from turtle import Turtle
 import random
 
-COLORS = ['red', 'yellow', 'orange', 'green', 'purple', 'blue', 'maroon', 'violet', 'pink', 'black', 'cyan', 'salmon',
-          'YellowGreen', 'magenta', 'brown', 'indigo', 'fuchsia', 'gold', 'turquoise', 'orchid', 'ivory', 'aquamarine']
+COLORS = ['red', 'yellow', 'orange', 'green', 'purple', 'blue', 'maroon', 'violet', 'pink', 'black', 'cyan', 'brown',
+          'YellowGreen', 'magenta', 'indigo', 'fuchsia', 'gold', 'turquoise', 'orchid', 'aquamarine']
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
 

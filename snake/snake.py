@@ -1,4 +1,5 @@
 from turtle import Turtle
+import time
 
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
@@ -27,6 +28,15 @@ class Snake:
         new_segment.penup()
         new_segment.setposition(position)
         self.segments.append(new_segment)
+
+    def reset(self):
+        """Clears the old snake and creates a new snake"""
+        for segment in self.segments:
+            segment.goto(1000, 1000)
+        self.segments.clear()
+        time.sleep(2)
+        self.create_snake()
+        self.head = self.segments[0]
 
     def extend(self):
         """Increases the length of the snake"""
