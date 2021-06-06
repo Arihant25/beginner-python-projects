@@ -57,3 +57,4 @@ This repository is a compilation of my simple Python projects.
 - crossy-turtle - Crossy Road, but made using Turtle
 - mail-merge - Creates customized invites to a birthday party using a list of names
 - weather_data - Experimenting with meteorological data using pandas
+- squirrel_data - Gets the number of squirrels of each color from the Central Park Squirrel Census data
