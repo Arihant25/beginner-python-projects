@@ -56,3 +56,4 @@ This repository is a compilation of my simple Python projects.
 - pong - Pong, but made using Turtle
 - crossy-turtle - Crossy Road, but made using Turtle
 - mail-merge - Creates customized invites to a birthday party using a list of names
+- weather_data - Experimenting with meteorological data using pandas
