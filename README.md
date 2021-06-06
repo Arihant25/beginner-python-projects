@@ -58,3 +58,4 @@ This repository is a compilation of my simple Python projects.
 - mail-merge - Creates customized invites to a birthday party using a list of names
 - weather_data - Experimenting with meteorological data using pandas
 - squirrel_data - Gets the number of squirrels of each color from the Central Park Squirrel Census data
+- us_states_game - Can you guess the names of all 50 states of the United States of America?
