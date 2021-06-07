@@ -15,13 +15,13 @@ writer.hideturtle()
 states = pandas.read_csv('50_states.csv')
 
 states_list = states.state.to_list()
-missed_states = states_list
 
 correct_states = []
 answer_state = screen.textinput(title="Guess the State", prompt="Enter a state's name:").title()
 
 while True:
     if answer_state == "Exit":
+        missed_states = [state for state in states_list if state not in correct_states]
         break
 
     if answer_state in states_list:
@@ -30,7 +30,6 @@ while True:
                     states[states.state == answer_state].y.to_list()[0])
         writer.goto(position)
         writer.write(arg=answer_state, font=("Corbel", 10, 'normal'))
-        missed_states.remove(answer_state)
         correct_states.append(answer_state)
     if len(correct_states) == 50:
         break
