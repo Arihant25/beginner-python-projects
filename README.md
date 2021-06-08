@@ -60,3 +60,4 @@ This repository is a compilation of my simple Python projects.
 - squirrel_data - Gets the number of squirrels of each color from the Central Park Squirrel Census data
 - us_states_game - Can you guess the names of all 50 states of the United States of America?
 - NATO_alphabet_converter - Converts words into a list of NATO alphabets
+- miles_to_kilometers - GUI app to convert miles to kilometers
