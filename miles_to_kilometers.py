@@ -4,7 +4,7 @@ from tkinter import *
 def convert():
     miles = float(input_box.get())
     km = miles * 1.609
-    answer.config(text=f"{km}")
+    answer.config(text=f"{round(km, 2)}")
 
 
 window = Tk()
