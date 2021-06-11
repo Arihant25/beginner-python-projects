@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import random
+import json
 
 # Change this to your own email so that it's prefilled every time
 EMAIL = "johndoe@example.com"
@@ -12,8 +13,10 @@ EMAIL = "johndoe@example.com"
 def generate_password():
     """Generates a random password"""
 
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-               'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+               'v', 'w', 'x', 'y', 'z',
+               'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+               'V', 'W', 'X', 'Y', 'Z']
 
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
@@ -49,9 +52,20 @@ def generate_password():
 def save():
     """Confirms and saves the entry, and clears the fields"""
 
+    def write_file(some_data):
+        """Writes some_data to the data.json file"""
+        with open('data.json', mode='w') as json_file:
+            json.dump(some_data, json_file, indent=4)
+
     website = website_entry.get()
     email = email_entry.get()
     password = password_entry.get()
+    new_data = {
+        website: {
+            "email": email,
+            "password": password
+        }
+    }
 
     if not website or not email or not password:
         messagebox.showerror(
@@ -59,17 +73,57 @@ def save():
 
     else:
         proceed = messagebox.askyesno(title="Confirm Entry",
-                                      message=f"These are the details:\nWebsite: {website}\nEmail: {email}\nPassword: {password}\nDo you want to save?")
+                                      message=f"These are the details:\n"
+                                              f"Website: {website}\n"
+                                              f"Email: {email}\n"
+                                              f"Password: {password}\n"
+                                              f"Do you want to save?")
 
         if proceed:
-            # Save the entry to a file
-            with open('data.txt', mode="a") as file:
-                file.write(
-                    f"{website} | {email} | {password}\n")
+            try:
+                # Save the entry to a file
+                with open('data.json', mode="r") as file:
+                    # Read old data
+                    data = json.load(file)
+                    # Update old data with new data
+                    data.update(new_data)
+            except FileNotFoundError:
+                # Create data.json if it doesn't exist
+                write_file(new_data)
+            else:
+                # Update existing data if the data.json file exists
+                write_file(data)
+            finally:
+                # Clears the entries upon save
+                website_entry.delete(0, END)
+                password_entry.delete(0, END)
 
-            # Clears the entries upon save
-            website_entry.delete(0, END)
-            password_entry.delete(0, END)
+
+# --------------------------- SEARCH ENTRY ---------------------------- #
+
+
+def find_password():
+    """Searches for a website entry in data.json"""
+    website = website_entry.get()
+    try:
+        with open('data.json', mode='r') as file:
+            data = json.load(file)
+            email = data[website]['email']
+            password = data[website]['password']
+    except FileNotFoundError:
+        messagebox.showerror(title="Data File Not Found",
+                             message="You haven't added any websites yet.\n"
+                                     "Please add one before trying again.")
+    except KeyError:
+        messagebox.showerror(title="Entry Not Found", message=f"We couldn't find any entries for '{website}'.")
+    else:
+        messagebox.showinfo(title=website, message=f"Email: {email}\n"
+                                                   f"Password: {password}\n"
+                                                   f"The password has been copied!")
+
+        # Copies the password
+        window.clipboard_clear()
+        window.clipboard_append(password)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -85,9 +139,10 @@ canvas.create_image(100, 100, image=logo)
 canvas.grid(column=1, row=0)
 
 Label(text='Website:').grid(column=0, row=1)
-website_entry = Entry(width=35)
-website_entry.grid(column=1, row=1, columnspan=2)
+website_entry = Entry(width=21)
+website_entry.grid(column=1, row=1, columnspan=1)
 website_entry.focus()
+Button(text="Search", command=find_password, width=14).grid(column=2, row=1, columnspan=1)
 
 Label(text="Email/Username:").grid(column=0, row=2)
 email_entry = Entry(width=35)
@@ -101,6 +156,5 @@ password_entry.grid(column=1, row=3)
 Button(text="Generate Password", command=generate_password).grid(column=2, row=3)
 
 Button(text="Add", width=36, command=save).grid(column=1, row=4, columnspan=2)
-
 
 window.mainloop()
