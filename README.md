@@ -63,3 +63,4 @@ This repository is a compilation of my simple Python projects.
 - miles_to_kilometers - GUI app to convert miles to kilometers
 - pomodoro_timer - GUI Pomodoro timer app
 - password_manager - Stores and generates passwords
+- flashy - A flash card app for learning the 101 most commonly used French words
