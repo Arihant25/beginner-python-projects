@@ -9,12 +9,12 @@ to_learn = {}
 # ------------------------------------------ Show Cards -----------------------------------------
 
 try:
-    original_data = pandas.read_csv('data/words_to_learn.csv').to_dict(orient="records")
+    new_data = pandas.read_csv('data/words_to_learn.csv').to_dict(orient="records")
 except FileNotFoundError:
-    new_data = pandas.read_csv('data/french_words.csv').to_dict(orient="records")
-    to_learn = new_data
-else:
+    original_data = pandas.read_csv('data/french_words.csv').to_dict(orient="records")
     to_learn = original_data
+else:
+    to_learn = new_data
 
 
 def next_card():
