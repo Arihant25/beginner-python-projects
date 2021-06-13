@@ -64,3 +64,5 @@ This repository is a compilation of my simple Python projects.
 - pomodoro_timer - GUI Pomodoro timer app
 - password_manager - Stores and generates passwords
 - flashy - A flash card app for learning the 101 most commonly used French words
+- monday_motivator - Emails a random motivational quote if it's a Monday
+- birthday_wisher - Emails people on their birthday
