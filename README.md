@@ -66,5 +66,6 @@ This repository is a compilation of my simple Python projects.
 - flashy - A flash card app for learning the 101 most commonly used French words
 - monday_motivator - Emails a random motivational quote if it's a Monday
 - birthday_wisher - Emails people on their birthday
-- ISS_tracker - Emails when the ISS is passing over you
 - kanye_quotes - GUI app to show a random quote by Kanye West on pressing a button
+- ISS_tracker - Emails when the ISS is passing over you
+- quizzler - A GUI quiz game with questions randomly fetched from the Open Trivia DB
