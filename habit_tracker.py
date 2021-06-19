@@ -46,11 +46,11 @@ today = today.strftime("%Y%m%d")
 PIXEL_ENDPOINT = f"{graph_endpoint}/{GRAPH_ID}"
 pixel_config = {
     "date": today,
-    "quantity": "2"
+    "quantity": input("How many hours did you study today?\n")
 }
 
-# response = requests.post(url=PIXEL_ENDPOINT, json=pixel_config, headers=headers)
-# print(response.text)
+response = requests.post(url=PIXEL_ENDPOINT, json=pixel_config, headers=headers)
+print(response.text)
 
 # Update the profile
 PROFILE_ENDPOINT = f"https://pixe.la/@{USERNAME}"
