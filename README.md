@@ -25,7 +25,7 @@ This repository is a compilation of my simple Python projects.
 - love-calculator - Calculates the chances that you are compatible with your crush
 - treasure-island - Another text based adventure game, but this time on an island!
 - coin-toss - Randomly shows heads or tails
-- bankers-roulette - Selects a random name from a given list of names, so that the person selected has to pay for everybody's food bill
+- bankers-roulette - Selects a random person from a given list of persons to pay for everybody's food bill
 - map - Allows you to mark a square on a 2D list
 - rock-paper-scissors - The classic game to settle any dispute
 - average-height - Calculates the average of a list of heights
@@ -71,3 +71,5 @@ This repository is a compilation of my simple Python projects.
 - quizzler - A GUI quiz game with questions randomly fetched from the Open Trivia DB
 - rain_alert - Sends an SMS if it's going to rain today
 - stock_news_alert - Messages the latest company news when stock price increases/decreases by more than 5%
+- habit_tracker - Tracks the number of hours spent studying using the Pixela API
+- workout_tracker - Tracks workouts based on natural language queries, and saves the data to your Google Sheets
