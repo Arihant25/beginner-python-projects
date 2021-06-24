@@ -36,4 +36,8 @@ class FlightSearch:
         }
         response = requests.get(url=search_endpoint, headers=HEADERS, params=params)
         response.raise_for_status()
-        return response.json()["data"][0]
+        data = response.json()["data"]
+        # If there are no flights, return None
+        if len(data) == 0:
+            return None
+        return data[0]

@@ -7,7 +7,7 @@ load_dotenv("../.env")
 
 class FlightData:
     def __init__(self):
-        self.fly_from = "LON"
+        self.fly_from = "BBI"
         tomorrow = date.today() + timedelta(days=1)
         self.date_from = tomorrow.strftime("%d/%m/%Y")
         self.date_to = (tomorrow + 30 * timedelta(days=6)).strftime("%d/%m/%Y")  # 6 months from tomorrow

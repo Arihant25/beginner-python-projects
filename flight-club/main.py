@@ -28,17 +28,24 @@ for row in sheet_data:
                                           flight_data.nights_in_dst_from, flight_data.nights_in_dst_to,
                                           flight_data.flight_type, flight_data.max_stopovers, iataCode,
                                           flight_data.curr)
-    new_price = search_results["price"]
-    fly_from = search_results["route"][0]["cityFrom"]
-    fly_to = search_results["route"][0]["cityTo"]
-    departure_iata = search_results["route"][0]["flyFrom"]
-    arrival_iata = search_results["route"][0]["flyTo"]
-    departure_date = search_results["route"][0]["local_departure"].split("T")[0]
-    arrival_date = search_results["route"][0]["local_arrival"].split("T")[0]
-
-    # Update the lowest price column and send an SMS
-    if new_price < current_price:
-        data_manager.update_sheet(row_id=row_id, params={"price": {"lowestPrice (inRupees)": new_price}})
-        notification_manager.send_sms(price=new_price, fly_from=fly_from, fly_to=fly_to,
-                                      departure_iata=departure_iata, arrival_iata=arrival_iata,
-                                      departure_date=departure_date, arrival_date=arrival_date)
+    try:
+        new_price = search_results["price"]
+        fly_from = search_results["route"][0]["cityFrom"]
+        fly_to = search_results["route"][0]["cityTo"]
+        departure_iata = search_results["route"][0]["flyFrom"]
+        arrival_iata = search_results["route"][0]["flyTo"]
+        departure_date = search_results["route"][0]["local_departure"].split("T")[0]
+        arrival_date = search_results["route"][0]["local_arrival"].split("T")[0]
+    except TypeError:
+        # If the data returned is None
+        continue
+    else:
+        # Update the lowest price column and send an email
+        if new_price < current_price:
+            data_manager.update_sheet(row_id=row_id, params={"price": {"lowestPrice (inRupees)": new_price}})
+            for user_row in data_manager.users:
+                email = user_row["email"]
+                notification_manager.send_email(price=new_price, fly_from=fly_from, fly_to=fly_to,
+                                                departure_iata=departure_iata, arrival_iata=arrival_iata,
+                                                departure_date=departure_date, arrival_date=arrival_date,
+                                                to_addrs=email)
