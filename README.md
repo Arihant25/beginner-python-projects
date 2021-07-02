@@ -73,4 +73,5 @@ This repository is a compilation of my simple Python projects.
 - stock_news_alert - Messages the latest company news when stock price increases/decreases by more than 5%
 - habit_tracker - Tracks the number of hours spent studying using the Pixela API
 - workout_tracker - Tracks workouts based on natural language queries, and saves the data to your Google Sheets
-- flight-club - Sends an SMS if there's a discount in flight prices to destinations listed in Google Sheets 
+- flight-club - Sends an SMS if there's a discount in flight prices to destinations listed in Google Sheets
+- hacker_news_scraper - Finds the most upvoted post on Hacker News
