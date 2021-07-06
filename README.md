@@ -76,3 +76,4 @@ This repository is a compilation of my simple Python projects.
 - flight-club - Sends an SMS if there's a discount in flight prices to destinations listed in Google Sheets
 - hacker_news_scraper - Finds the most upvoted post on Hacker News
 - top_100_movies - Gets a random movie from the list of Top 100 movies by Empire
+- amazon_price_tracker - Emails you when the price of an Amazon product you want drops
