@@ -78,4 +78,4 @@ This repository is a compilation of my simple Python projects.
 - top_100_movies - Gets a random movie from the list of Top 100 movies by Empire
 - amazon_price_tracker - Emails you when the price of an Amazon product you want drops
 - python_events - Gets the upcoming events from the python.org website and displays them
-- cookie_clicker - A bot which plays the cookie clicker game
+- cookie_clicker - A bot which plays the [cookie clicker game](http://orteil.dashnet.org/cookieclicker/)
