@@ -79,3 +79,4 @@ This repository is a compilation of my simple Python projects.
 - amazon_price_tracker - Emails you when the price of an Amazon product you want drops
 - python_events - Gets the upcoming events from the python.org website and displays them
 - cookie_clicker - A bot which plays the [cookie clicker game](http://orteil.dashnet.org/cookieclicker/)
+- speed_test_twitter_bot - A Twitter bot which tweets my internet speeds
