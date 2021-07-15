@@ -11,4 +11,4 @@ sum = 0
 for height in student_heights:
     sum += height
 
-print(f"The average height is {round(sum / len(student_heights))}.")
+print(f"The average height is {round(sum / len(student_heights))}")
