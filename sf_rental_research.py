@@ -29,13 +29,12 @@ def get_zillow_data():
     price_list = [price.get_text().split("+")[0]
                   for price in soup.select("div .list-card-price")]
     # Get the link to each house
-    link_list = [link.get("href")
-                 for link in soup.select("li a.list-card-link")]
-    for link in soup.select("li a.list-card-link"):
-        if "http" in link.get_text():
-            link_list.append(link.get_text())
+    link_list = []
+    for link in soup.select(".list-card-top a"):
+        if "http" in link.get("href"):
+            link_list.append(link.get("href"))
         else:
-            link_list.append("https://www.zillow.com" + link.get_text())
+            link_list.append("https://www.zillow.com" + link.get("href"))
 
     return address_list, price_list, link_list
 
