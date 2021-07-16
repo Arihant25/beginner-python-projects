@@ -80,3 +80,4 @@ This repository is a compilation of my simple Python projects.
 - python_events - Gets the upcoming events from the python.org website and displays them
 - cookie_clicker - A bot which plays the [cookie clicker game](http://orteil.dashnet.org/cookieclicker/)
 - speed_test_twitter_bot - A Twitter bot which tweets my internet speeds
+- sf_rental_research - Gets the rental rates for San Francisco from Zillow and creates a spreadsheet with the data
