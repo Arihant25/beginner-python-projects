@@ -46,6 +46,7 @@ def fill_google_form(housing_data):
         sleep(2)
         driver.find_element_by_xpath(
             '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input').send_keys(housing_data[0][i] + Keys.TAB + housing_data[1][i] + Keys.TAB + housing_data[2][i] + Keys.TAB + Keys.ENTER)
+    driver.quit()
 
 
 fill_google_form(get_zillow_data())
