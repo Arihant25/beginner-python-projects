@@ -1,17 +1,11 @@
-def prime_checker(number):
+def is_prime(num):
+    prime = False
+    factors = 0
+    if num > 1:
+        for i in range(2, round(num)):
+            if num % i == 0:
+                factors += 1
+        if factors < 1:
+            prime = True
 
-    isPrime = True
-
-    for i in range(2, number):
-
-        if number % i != 0:
-            isPrime = False
-
-    if isPrime:
-        print(f"{number} is a prime number.")
-
-    else:
-        print(f"{number} is a composite number.")
-
-
-prime_checker(int(input("Enter a number: ")))
+    return prime
