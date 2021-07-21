@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Predictor</title>
+  </head>
+  <body>
+    <h1>Hey There!</h1>
+    <p>
+      I can predict your gender and age just by knowing your name. To get
+      started, enter your name in the address bar of your browser, after the /
+    </p>
+    <p>
+      For example, if you're John,
+      <a href="{{ url_for('get_name',name='John') }}">click here.</a>
+    </p>
+  </body>
+</html>

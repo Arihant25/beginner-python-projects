@@ -18,7 +18,7 @@ correct_answer: int = randint(0, 9)
 def index() -> str:
     return f'''
     <h1>Welcome to Guess the Number!</h1>
-        <p>Guess a number from 0 to 9 by appending the number to the end of the URL.</p>
+    <p>Guess a number from 0 to 9 by appending the number to the end of the URL.</p>
     <img src="{INTRO}">
     '''
 
