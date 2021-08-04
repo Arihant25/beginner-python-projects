@@ -86,3 +86,4 @@ This repository is a compilation of my simple Python projects.
 - name-predictor - Guesses the age and gender of a person just from their name
 - simple-blog - A simple blog app using Flask
 - upgraded-blog - A stylized version of the simple-blog using Bootstrap
+- top_secret - A Flask app with Bootstrap and WTForms
