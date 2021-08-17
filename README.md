@@ -1,4 +1,4 @@
-# Beginner Python Projects
+# Arihant's Beginner Python Projects
 
 This repository is a compilation of my simple Python projects.
 
