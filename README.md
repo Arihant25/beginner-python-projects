@@ -87,3 +87,4 @@ This repository is a compilation of my simple Python projects.
 - simple-blog - A simple blog app using Flask
 - upgraded-blog - A stylized version of the simple-blog using Bootstrap
 - top_secret - A Flask app with Bootstrap and WTForms
+- library - A book management web app using Flask and SQLAlchemy
