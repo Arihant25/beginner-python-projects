@@ -89,4 +89,4 @@ This repository is a compilation of my simple Python projects.
 - top_secret - A Flask app with Bootstrap and WTForms
 - library - A book management web app using Flask and SQLAlchemy
 - top_movies_web - A web app which shows some of my favourite movies
-- cafe-api - An API made using Flask to manage data on cafés in London
+- cafe-api - An API made using Flask to manage data on cafés in London. [Read the docs.](https://documenter.getpostman.com/view/17296110/U16bwp2od)
