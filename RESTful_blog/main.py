@@ -83,6 +83,7 @@ def new_post():
 @app.route("/edit/<int:post_id>", methods=['GET', 'POST'])
 def edit_post(post_id):
     post = db.session.query(BlogPost).get(post_id)
+    # Prepopulate form fields with existing data
     form = CreatePostForm(
         title=post.title,
         subtitle=post.subtitle,

@@ -1,11 +1,12 @@
-def is_prime(num):
-    prime = False
-    factors = 0
-    if num > 1:
-        for i in range(2, round(num)):
-            if num % i == 0:
-                factors += 1
-        if factors < 1:
-            prime = True
+num = int(input("Enter a number: "))
+is_prime = True
 
-    return prime
+for i in range(2, num // 2 + 1):
+    if num % i == 0:
+        is_prime =  False
+        break
+
+if is_prime:
+    print("Prime.")
+else:
+    print("Not prime.")
