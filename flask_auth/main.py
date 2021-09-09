@@ -10,6 +10,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+# Configure login manager
 login_manager = LoginManager()
 login_manager.init_app(app)
 
@@ -22,6 +23,8 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(100))
     name = db.Column(db.String(1000))
     is_authenticated = True
+
+# Create user loader function required by flask-login
 
 
 @login_manager.user_loader
@@ -37,6 +40,8 @@ def home():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
+
+        # Get the name and email from the form
         name = request.form['name']
         email = request.form['email']
 
@@ -49,7 +54,7 @@ def register():
         hashed_password = generate_password_hash(
             request.form['password'], method='pbkdf2:sha256', salt_length=8)
 
-        # Create a new user and add it to the database
+        # Create a new user and add them to the database
         new_user = User(
             name=name,
             email=email,
@@ -68,12 +73,15 @@ def register():
 def login():
     if request.method == 'POST':
 
+        # Get the email and password from the form
         email = request.form['email']
         password = request.form['password']
 
-        user = User.query.filter_by(email=email).first()
+        # Check if the user exists in the database
+        user = db.session.query(User).filter_by(email=email).first()
 
         if user:
+            # Check if the password is correct
             if check_password_hash(user.password, password):
                 login_user(user)
                 return redirect(url_for('secrets', name=user.name))
