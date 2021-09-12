@@ -88,7 +88,8 @@ This repository is a compilation of my simple Python projects.
 - upgraded-blog - A stylized version of the simple-blog using Bootstrap
 - top_secret - A Flask app with Bootstrap and WTForms
 - library - A book management web app using Flask and SQLAlchemy
-- top_movies_web - A web app which shows some of my favourite movies
+- top_movies_web - A Flask app which shows some of my favourite movies
 - cafe-api - An API made using Flask to manage data on cafés in London. [Read the docs](https://documenter.getpostman.com/view/17296110/U16bwp2o)
-- RESTful_blog - A RESTful blog app using Flask which allows you to create, edit, and delete posts
+- RESTful_blog - A RESTful blog using Flask which allows you to create, edit, and delete posts
 - flask_auth - An authentication app using Flask that allows you to register, login, and logout
+- ultimate_blog - The final version of the blog
