@@ -93,3 +93,4 @@ This repository is a compilation of my simple Python projects.
 - RESTful_blog - A RESTful blog using Flask which allows you to create, edit, and delete posts
 - flask_auth - An authentication app using Flask that allows you to register, login, and logout
 - ultimate_blog - The final version of the blog
+- salaries_by_major - Analyzing the salaries depending on the college majors using Pandas
