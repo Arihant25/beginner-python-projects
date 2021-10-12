@@ -94,3 +94,5 @@ This repository is a compilation of my simple Python projects.
 - flask_auth - An authentication app using Flask that allows you to register, login, and logout
 - ultimate_blog - The final version of the blog
 - salaries_by_major - Analyzing the salaries depending on the college majors using Pandas
+- programming_languages - Analyzing the popularity of programming languages from Stack Overflow using Pandas and matplotlib
+- lego_analysis - Analyzing various data on Lego
