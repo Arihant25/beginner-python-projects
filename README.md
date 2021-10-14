@@ -96,3 +96,4 @@ This repository is a compilation of my simple Python projects.
 - salaries_by_major - Analyzing the salaries depending on the college majors using Pandas
 - programming_languages - Analyzing the popularity of programming languages from Stack Overflow using Pandas and matplotlib
 - lego_analysis - Analyzing various data on Lego
+- google_trends_analysis - Analyzing Google Trends data on Tesla, Bitcoin, and unemployment in the US
