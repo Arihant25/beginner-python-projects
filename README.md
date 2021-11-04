@@ -99,3 +99,4 @@ This repository is a compilation of my simple Python projects.
 - google_trends_analysis - Analyzing Google Trends data on Tesla, Bitcoin, and unemployment in the US
 - play_store_app_analytics - Creating charts from data on Google Play Store apps using plotly
 - computation_with_numpy - Demonstrating basic computation and manipulating images with Numpy, PIL and matplotlib
+- seaborn_and_linear_regression - Analyzing movie revenue with scikit-learn and Seaborn
