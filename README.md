@@ -100,3 +100,4 @@ This repository is a compilation of my simple Python projects.
 - play_store_app_analytics - Creating charts from data on Google Play Store apps using plotly
 - computation_with_numpy - Demonstrating basic computation and manipulating images with Numpy, PIL and matplotlib
 - seaborn_and_linear_regression - Analyzing movie revenue with scikit-learn and Seaborn
+- nobel_prize_analysis - Analyzing the Nobel Prize winners and creating various charts and graphs
