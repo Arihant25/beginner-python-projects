@@ -101,3 +101,4 @@ This repository is a compilation of my simple Python projects.
 - computation_with_numpy - Demonstrating basic computation and manipulating images with Numpy, PIL and matplotlib
 - seaborn_and_linear_regression - Analyzing movie revenue with scikit-learn and Seaborn
 - nobel_prize_analysis - Analyzing the Nobel Prize winners and creating various charts and graphs
+- discovery_of_handwashing - Discover the importance of handwashing using data from the Vienna General Hospital
